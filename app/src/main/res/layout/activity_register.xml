@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kayıt ol"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/register_emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:hint="Eposta"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/register_passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/register_registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Kayıt ol" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Ya da"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/register_redirectToLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Giriş yap" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:padding="8dp"
+        android:text="201913709013 - Emre Dişci" />
+</LinearLayout>
